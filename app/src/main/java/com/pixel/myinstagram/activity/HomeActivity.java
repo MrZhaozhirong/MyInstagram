@@ -36,7 +36,7 @@ public class HomeActivity extends BaseDrawerActivity {
         if (savedInstanceState == null) {
             pendingIntroAnimation = true;
         } else {
-            feedAdapter.updateItems(false);
+            //feedAdapter.updateItems(false);
         }
     }
 
