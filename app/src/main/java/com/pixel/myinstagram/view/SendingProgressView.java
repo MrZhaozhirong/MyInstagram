@@ -27,7 +27,7 @@ import com.pixel.myinstagram.R;
  */
 
 public class SendingProgressView extends View {
-
+    //http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0509/2851.html
     public SendingProgressView(Context context) {
         super(context);
         init();
@@ -60,8 +60,8 @@ public class SendingProgressView extends View {
     private static final int MAX_DONE_BG_OFFSET = 800;
     private static final int MAX_DONE_IMG_OFFSET = 400;
 
-    private Paint progressPaint;
-    private Paint doneBgPaint;
+    private Paint progressPaint;//原型进度条
+    private Paint doneBgPaint;//
     private Paint checkmarkPaint;
     private Paint maskPaint;
 
