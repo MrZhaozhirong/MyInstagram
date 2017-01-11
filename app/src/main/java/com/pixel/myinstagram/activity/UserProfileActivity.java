@@ -54,6 +54,7 @@ public class UserProfileActivity extends BaseDrawerActivity implements RevealBac
 
     public static void startUserProfileFromLocation(int[] startingLocation, Activity startingActivity) {
         Intent intent = new Intent(startingActivity, UserProfileActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intent.putExtra(ARG_REVEAL_START_LOCATION, startingLocation);
         startingActivity.startActivity(intent);
     }

@@ -6,31 +6,32 @@
         <item quantity="other">%d likes</item>
     </plurals>
 
-    <string name="user_profile_photo">http://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/929118_455075441302693_1605108410_a.jpg</string>
+    <string name="user_profile_photo">http://f.hiphotos.baidu.com/zhidao/wh%3D450%2C600/sign=7327101f083387449c902778643ff5cf/1f178a82b9014a90730008f2ad773912b31bee47.jpg</string>
 
     <string-array name="user_photos">
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xpf1/t51.2885-15/s306x306/e15/10665483_429615813855717_1490926670_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10891026_694434897342602_1094773634_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10894920_1382218332084671_10354293_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xfa1/t51.2885-15/s306x306/e15/10895429_768163716566132_692639371_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10899087_405295322969722_20422376_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10899123_922231267802027_1123900984_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xfa1/t51.2885-15/s306x306/e15/10903214_589111004559561_1485881959_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xfa1/t51.2885-15/s306x306/e15/10914479_770066599745785_704061869_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xfa1/t51.2885-15/s306x306/e15/10914587_1580079332227764_829762970_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xfa1/t51.2885-15/s306x306/e15/10919231_605000369644967_1578007175_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10932142_330866587116424_1327271556_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xfa1/t51.2885-15/s306x306/e15/10932410_1544715455813452_1107632347_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xfp1/t51.2885-15/s306x306/e15/891516_579817258815508_1989379587_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/1922172_719849754801056_911351010_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10914370_1519297625009641_722250486_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10903746_368501953321344_2002746420_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10903270_1397263717236338_950192395_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10903242_441936642627221_576882729_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10899295_796858437028648_664655000_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10899139_948470841831743_1406659049_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10899123_922231267802027_1123900984_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10899087_405295322969722_20422376_n.jpg</item>
+        <item>http://a.hiphotos.baidu.com/image/pic/item/e7cd7b899e510fb3a78c787fdd33c895d0430c44.jpg</item>
+        <item>http://a.hiphotos.baidu.com/image/pic/item/caef76094b36acaf166c991478d98d1000e99c4d.jpg</item>
+        <item>http://c.hiphotos.baidu.com/image/pic/item/f703738da977391279688a89fc198618377ae288.jpg</item>
+        <item>http://f.hiphotos.baidu.com/image/pic/item/a2cc7cd98d1001e904cc1be7bc0e7bec55e79761.jpg</item>
+        <item>http://e.hiphotos.baidu.com/image/pic/item/562c11dfa9ec8a138fea5808f303918fa1ecc062.jpg</item>
+        <item>http://b.hiphotos.baidu.com/image/pic/item/77094b36acaf2edd9a034601891001e938019363.jpg</item>
+        <item>http://d.hiphotos.baidu.com/image/pic/item/b03533fa828ba61edb3ac7c74534970a314e5905.jpg</item>
+        <item>http://c.hiphotos.baidu.com/image/pic/item/cf1b9d16fdfaaf51a1348e57885494eef11f7a06.jpg</item>
+        <item>http://b.hiphotos.baidu.com/image/pic/item/b999a9014c086e06fc2030a306087bf40bd1cb4a.jpg</item>
+        <item>http://a.hiphotos.baidu.com/image/pic/item/5d6034a85edf8db1ab6b738c0d23dd54574e7494.jpg</item>
+        <item>http://e.hiphotos.baidu.com/image/pic/item/f7246b600c338744e7162094550fd9f9d62aa002.jpg</item>
+        <item>http://h.hiphotos.baidu.com/image/pic/item/279759ee3d6d55fb451579ce69224f4a21a4dd03.jpg</item>
+        <item>http://b.hiphotos.baidu.com/image/pic/item/b3119313b07eca804c80360f952397dda0448354.jpg</item>
+
+        <item>http://g.hiphotos.baidu.com/image/pic/item/8ad4b31c8701a18b516e1da79a2f07082938fe55.jpg</item>
+        <item>http://c.hiphotos.baidu.com/image/pic/item/472309f79052982280874be4d2ca7bcb0a46d465.jpg</item>
+        <item>http://d.hiphotos.baidu.com/image/pic/item/b3119313b07eca807eb24bc0942397dda1448365.jpg</item>
+        <item>http://e.hiphotos.baidu.com/image/pic/item/f11f3a292df5e0fed5affb26596034a85edf7265.jpg</item>
+        <item>http://e.hiphotos.baidu.com/image/pic/item/9345d688d43f879420483a09d71b0ef41bd53a65.jpg</item>
+
+        <item>http://b.hiphotos.baidu.com/image/pic/item/b21c8701a18b87d6eeacd938020828381f30fd2f.jpg</item>
+        <item>http://f.hiphotos.baidu.com/image/pic/item/5882b2b7d0a20cf414798cf873094b36acaf992f.jpg</item>
+        <item>http://f.hiphotos.baidu.com/image/pic/item/c83d70cf3bc79f3d8d209617bfa1cd11738b29d7.jpg</item>
     </string-array>
 
 </resources>
