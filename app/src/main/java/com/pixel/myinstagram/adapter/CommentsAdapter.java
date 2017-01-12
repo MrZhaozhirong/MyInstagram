@@ -1,10 +1,13 @@
 package com.pixel.myinstagram.adapter;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -21,8 +24,21 @@ import butterknife.ButterKnife;
  */
 
 public class CommentsAdapter extends RecyclerView.Adapter {
+
     private Context context;
     private int avatarSize;
+    private int lastAnimatedPosition = -1;
+
+    private boolean animationsLocked = false;
+    private boolean delayEnterAnimation = true;
+
+    public void setAnimationsLocked(boolean animationsLocked){
+        this.animationsLocked = animationsLocked;
+    }
+
+    public void setDelayEnterAnimation(boolean delayEnterAnimation) {
+        this.delayEnterAnimation = delayEnterAnimation;
+    }
 
     public CommentsAdapter(Context context) {
         this.context = context;
@@ -37,6 +53,7 @@ public class CommentsAdapter extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder viewHolder, int position) {
+        runEnterAnimation(viewHolder.itemView, position);
         CommentViewHolder holder = (CommentViewHolder) viewHolder;
         switch (position % 3) {
             case 0:
@@ -58,7 +75,28 @@ public class CommentsAdapter extends RecyclerView.Adapter {
                 .into(holder.ivUserAvatar);
     }
 
-    private int itemsCount = 10;
+    private void runEnterAnimation(View itemView, int position) {
+        if (animationsLocked) return;
+        if (position > lastAnimatedPosition) {
+            lastAnimatedPosition = position;
+            itemView.setTranslationY(100);
+            itemView.setAlpha(0.f);
+            itemView.animate()
+                    .translationY(0).alpha(1.f)
+                    .setStartDelay(delayEnterAnimation ? 20 * (position) : 0)
+                    .setInterpolator(new DecelerateInterpolator(2.f))
+                    .setDuration(300)
+                    .setListener(new AnimatorListenerAdapter() {
+                        @Override
+                        public void onAnimationEnd(Animator animation) {
+                            animationsLocked = true;
+                        }
+                    })
+                    .start();
+        }
+    }
+
+    private int itemsCount = 0;
     @Override
     public int getItemCount() {
         return itemsCount;
@@ -73,10 +111,6 @@ public class CommentsAdapter extends RecyclerView.Adapter {
         itemsCount++;
         notifyItemInserted(itemsCount - 1);
     }
-
-
-
-
 
 
     public static class CommentViewHolder extends RecyclerView.ViewHolder {
