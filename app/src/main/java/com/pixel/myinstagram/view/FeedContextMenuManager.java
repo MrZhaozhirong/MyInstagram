@@ -93,6 +93,8 @@ public class FeedContextMenuManager
 
 
     public void hideContextMenu() {
+        if (contextMenuView == null) return;
+
         if (!isContextMenuDismissing) {
             isContextMenuDismissing = true;
             performDismissAnimation();

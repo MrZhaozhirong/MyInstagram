@@ -2,6 +2,7 @@ package com.pixel.myinstagram.activity;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.CoordinatorLayout;
@@ -130,7 +131,12 @@ public class HomeActivity extends BaseDrawerActivity implements FeedAdapter.OnFe
     // OnFeedItemClickListener start
     @Override
     public void onCommentsClick(View v, int position) {
-
+        final Intent intent = new Intent(this, CommentsActivity.class);
+        int[] startingLocation = new int[2];
+        v.getLocationOnScreen(startingLocation);
+        intent.putExtra(CommentsActivity.ARG_DRAWING_START_LOCATION, startingLocation[1]);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
     @Override
