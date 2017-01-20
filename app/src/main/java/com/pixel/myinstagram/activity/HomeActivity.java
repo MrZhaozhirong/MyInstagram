@@ -13,8 +13,10 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.OvershootInterpolator;
+import android.widget.Toast;
 
 import com.pixel.myinstagram.R;
 import com.pixel.myinstagram.Utils;
@@ -23,6 +25,7 @@ import com.pixel.myinstagram.view.FeedContextMenu;
 import com.pixel.myinstagram.view.FeedContextMenuManager;
 
 import butterknife.BindView;
+import butterknife.OnClick;
 
 /**
  * Created by ZZR on 2016/12/26.
@@ -86,6 +89,14 @@ public class HomeActivity extends BaseDrawerActivity implements FeedAdapter.OnFe
             pendingIntroAnimation = false;
             startIntroAnimation();
         }
+        getInboxMenuItem().getActionView().setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Toast.makeText(HomeActivity.this, "MenuItem View Click", Toast.LENGTH_SHORT).show();
+                    }
+                }
+        );
         return true;
     }
 
@@ -177,5 +188,16 @@ public class HomeActivity extends BaseDrawerActivity implements FeedAdapter.OnFe
 
     public void showLikedSnackbar() {
         Snackbar.make(clContent, "Liked!", Snackbar.LENGTH_SHORT).show();
+    }
+
+
+
+    @OnClick(R.id.btnCreate)
+    public void onTakePhotoClick(){
+        int[] startingLocation = new int[2];
+        fabCreate.getLocationOnScreen(startingLocation);
+        startingLocation[0] += fabCreate.getWidth() / 2;
+        TakePhotoActivity.startCameraFromLocation(startingLocation, this);
+        overridePendingTransition(0, 0);
     }
 }
