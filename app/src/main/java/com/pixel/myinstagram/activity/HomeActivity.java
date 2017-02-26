@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -33,6 +34,7 @@ import butterknife.OnClick;
 
 public class HomeActivity extends BaseDrawerActivity implements FeedAdapter.OnFeedItemClickListener {
 
+    public static final String ACTION_SHOW_LOADING_ITEM = "action_show_loading_item";
     private static final int ANIM_DURATION_TOOLBAR = 300;
     private static final int ANIM_DURATION_FAB = 400;
 
@@ -81,6 +83,23 @@ public class HomeActivity extends BaseDrawerActivity implements FeedAdapter.OnFe
         rvFeed.setItemAnimator(new DefaultItemAnimator());
     }
 
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        if (ACTION_SHOW_LOADING_ITEM.equals(intent.getAction())) {
+            showFeedLoadingItemDelayed();
+        }
+    }
+
+    private void showFeedLoadingItemDelayed() {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                rvFeed.smoothScrollToPosition(0);
+                feedAdapter.showLoadingView();
+            }
+        }, 500);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
